@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>body {
+        margin: 0;
+        padding: 0;
+        background-color: var(--dark-bg);
+        color: var(--text-light);
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.6;
+    }
+
+    h1, h2, h3 {
+        font-family: 'Playfair Display', serif;
+        color: var(--gold);
+    }
+
+    /* Navigation */
+    header {
+        background-color: var(--near-black);
+        padding: 20px 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .brand-name {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--gold);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    nav a {
+        color: var(--text-light);
+        text-decoration: none;
+        margin-left: 25px;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: var(--gold);
+    }
+
+    /* Hero Section */
+    .hero {
+        position: relative;
+        height: 90vh;
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                    url('new.png');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+        margin: 0 0 20px 0;
+    }
+
+    .btn {
+        background: var(--gold);
+        color: var(--near-black);
+        padding: 15px 40px;
+        text-decoration: none;
+        font-weight: 600;
+        border-radius: 2px;
+        transition: 0.3s ease;
+    }
+
+    .btn:hover {
+        background: #fff;
+        transform: translateY(-3px);
+    }
+
+    /* Content Sections */
+    .container {
+        max-width: 1200px;
+        margin: 80px auto;
+        padding: 0 20px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .content-img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 4px;
+        border: 1px solid rgba(212, 175, 55, 0.2);
+    }
+
+    .text-content h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    /* Footer */
+    footer {
+        background: var(--near-black);
+        padding: 60px 20px;
+        text-align: center;
+        border-top: 1px solid #333;
+    }
+
+    @media (max-width: 768px) {
+        .grid { grid-template-columns: 1fr; }
+        .hero h1 { font-size: 2.2rem; }
+        nav { display: none; } /* Simplified for mobile */
+    }
+</style>
+</head>
+<body>
+    <header>
+    <div class="brand-name">RSR Gold Dust</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    
+ <a href="#" class="btn">VIEW MENU</a>
+</section>
+
+<div class="container">
+    <div class="grid" id="about">
+        <div class="text-content">
+            <h2>Our Story</h2>
+            <p>At RSR Gold Dust Coffee House, we believe coffee is more than just a drink; it's a ritual. Every bean is carefully selected and roasted to perfection, topped with our signature touch of gold. Our mission is to provide an atmosphere of luxury and comfort in every sip.</p>
+        </div>
+        <img src="http://googleusercontent.com/image_collection/image_retrieval/13498900219068566535_0" alt="Latte Art" class="content-img">
+    </div>
+
+    <div class="grid">
+        <img src="http://googleusercontent.com/image_collection/image_retrieval/17914645660173958764_0" alt="Our Barista" class="content-img">
+        <div class="text-content">
+            <h2>Latest News</h2>
+            <p>Discover our new seasonal blends and the art of professional brewing. Our master baristas are now hosting weekend workshops for those who want to master the craft of the perfect espresso at home.</p>
+            <a href="#" style="color: var(--gold); text-decoration: none; font-weight: bold;">READ MORE →</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 RSR Gold Dust Coffee House. All rights reserved.</p>
+    <div style="margin-top: 20px;">
+        <a href="#" style="color: var(--gold); margin: 0 10px;">Instagram</a>
+        <a href="#" style="color: var(--gold); margin: 0 10px;">Facebook</a>
+    </div>
+</footer>
+</body>
+</html>
