@@ -39,18 +39,13 @@
       align-items: center;
       gap: 14px;
     }
-    .brand-mark {
-      width: 44px;
-      height: 44px;
+    .brand img{
+      width: 5%;
       border-radius: 50%;
-      display: grid;
-      place-items: center;
-      background: var(--near-black);
-      border: 2px solid var(--gold);
-      color: var(--gold);
-      font-size: 20px;
-      box-shadow: 0 0 16px rgba(212,175,55,0.25);
+      border: 1px solid var(--gold);
+      
     }
+    
     .brand-name {
       font-family: 'Playfair Display', serif;
       letter-spacing: 2px;
@@ -70,20 +65,15 @@
         linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
         url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1600&q=80') center/cover;
     }
-    .gold-circle-logo {
+
+    .lo{
       width: 160px;
       height: 160px;
-      background: var(--near-black);
-      border: 4px solid var(--gold);
       border-radius: 50%;
-      margin: 0 auto 24px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 0 30px rgba(212,175,55,0.3);
-      color: var(--gold);
-      font-size: 40px;
+      background: var(--near-black);
+      border: 2px solid var(--gold);
     }
+
     .main-title {
       font-family: 'Playfair Display', serif;
       font-size: 3rem;
@@ -156,7 +146,7 @@
 
   <header>
     <div class="brand">
-      <div class="brand-mark">☕</div>
+      <img src="logo.png" alt="">
       <div class="brand-name">GOLD DUST</div>
     </div>
   </header>
@@ -164,7 +154,7 @@
   <main>
     <section class="hero-section">
       <div>
-        <div class="gold-circle-logo">☕</div>
+        <img src="logo.png" alt="" class="lo">
         <h1 class="main-title">Our Heritage</h1>
         <div class="gold-line"></div>
       </div>
