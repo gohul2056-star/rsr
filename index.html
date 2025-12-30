@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
+   <style>
+        :root {
+            --gold: #d4af37;
+            --dark-bg: #1a1a1a;
+            --near-black: #121212;
+            --text-light: #f4f4f4;
+        }
+
     body {
         margin: 0;
         padding: 0;
@@ -16,12 +23,12 @@
 
     h1, h2, h3 {
         font-family: 'Playfair Display', serif;
-        color: #d4af37;
+        color: var(--gold);
     }
 
     /* Navigation */
     header {
-        background-color: #333333;
+        background-color: var(--near-black);
         padding: 20px 5%;
         display: flex;
         justify-content: space-between;
@@ -35,7 +42,7 @@
     .brand-name {
         font-size: 1.5rem;
         font-weight: 700;
-        color: #d4af37;
+        color: var(--gold);
         text-transform: uppercase;
         letter-spacing: 2px;
     }
@@ -50,7 +57,7 @@
     }
 
     nav a:hover {
-        color: #d4af37;
+        color: var(--gold);
     }
 
     /* Hero Section */
@@ -73,7 +80,7 @@
     }
 
     .btn {
-        background-color: #d4af37;
+        background-color: var(--gold);
         color: #121212;
         padding: 15px 40px;
         text-decoration: none;
@@ -154,16 +161,23 @@
         </div>
         <img src="new.jpeg" alt="Latte Art" class="content-img">
     </div>
-
     <div class="grid">
-        <img src="http://googleusercontent.com/image_collection/image_retrieval/17914645660173958764_0" alt="Our Barista" class="content-img">
+        <img src="new1.jpg" alt="Our Barista" class="content-img">
+        <div class="text-content">
+            <h2>Featured Coffees</h2>
+            <p>Experience coffee redefined for the true connoisseur.Small-batch, slow-roasted beans unlock deep and complex flavors.Every cup is finished with our signature "Gold Dust" touch.From bold espressos to elegant art, we craft magic in every sip.</p>
+            <a href="#" style="color: var(--gold); text-decoration: none; font-weight: bold;">READ MORE →</a>
+        </div>
+    </div>
+     <div class="grid" id="about">
         <div class="text-content">
             <h2>Latest News</h2>
             <p>Discover our new seasonal blends and the art of professional brewing. Our master baristas are now hosting weekend workshops for those who want to master the craft of the perfect espresso at home.</p>
             <a href="#" style="color: var(--gold); text-decoration: none; font-weight: bold;">READ MORE →</a>
         </div>
-    </div>
-</div>
+        <img src="new2.jpg" alt="Latte Art" class="content-img">
+         
+   </div>
 
 <footer>
     <p>&copy; 2025 RSR Gold Dust Coffee House. All rights reserved.</p>
