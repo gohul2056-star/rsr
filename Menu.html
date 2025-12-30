@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RSR GOLD DUST COFFEE — Investor Menu</title>
+  <style>
+    :root {
+      --gold: #d4af37;
+      --dark-bg: #1a1a1a;
+      --near-black: #121212;
+      --text-light: #f4f4f4;
+    }
+
+   
+    html {
+      box-sizing: border-box;
+    }
+    *, *::before, *::after {
+      box-sizing: inherit;
+    }
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, var(--near-black), var(--dark-bg));
+      color: var(--text-light);
+      font-family: inherit;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Layout */
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+
+    /* Branding header */
+    .brand {
+      text-align: center;
+      margin-bottom: 28px;
+      padding: 24px;
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      background: radial-gradient(1200px 600px at 50% -200px, rgba(212, 175, 55, 0.08), transparent 70%);
+    }
+    .brand h1 {
+      margin: 0 0 10px;
+      font-size: 2rem;
+      letter-spacing: 0.04em;
+      color: var(--text-light);
+    }
+    .brand .tagline {
+      color: var(--gold);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+    }
+
+    /* Section headings */
+    .section {
+      margin-top: 32px;
+      padding-top: 8px;
+      border-top: 1px solid rgba(212, 175, 55, 0.25);
+    }
+    .section h2 {
+      margin: 0 0 12px;
+      font-size: 1.35rem;
+      color: var(--gold);
+      letter-spacing: 0.02em;
+    }
+
+    /* Concept paragraph */
+    .concept {
+      background: linear-gradient(180deg, rgba(18, 18, 18, 0.6), rgba(26, 26, 26, 0.8));
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      padding: 16px 18px;
+      border-radius: 12px;
+    }
+    .concept p {
+      margin: 0;
+    }
+
+    /* Menu tables */
+    .menu-block {
+      margin-top: 18px;
+      overflow: hidden;
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      border-radius: 12px;
+      background: rgba(18, 18, 18, 0.6);
+    }
+    .menu-header {
+      padding: 12px 16px;
+      background: rgba(212, 175, 55, 0.08);
+      color: var(--gold);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    tbody tr {
+      border-top: 1px solid rgba(212, 175, 55, 0.14);
+    }
+    td {
+      padding: 12px 16px;
+      vertical-align: middle;
+    }
+    td.item {
+      color: var(--text-light);
+    }
+    td.price {
+      color: var(--gold);
+      text-align: right;
+      white-space: nowrap;
+      font-weight: 600;
+    }
+
+    /* Subsection dividers */
+    .subheading {
+      display: block;
+      padding: 12px 16px;
+      font-weight: 600;
+      color: var(--gold);
+      background: rgba(212, 175, 55, 0.05);
+      border-top: 1px solid rgba(212, 175, 55, 0.12);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.12);
+      letter-spacing: 0.01em;
+    }
+
+    /* USP list */
+    .usp {
+      margin-top: 16px;
+      padding: 16px 18px;
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      border-radius: 12px;
+      background: rgba(18, 18, 18, 0.6);
+    }
+    .usp ul {
+      margin: 0;
+      padding-left: 18px;
+      list-style: none;
+    }
+    .usp li {
+      position: relative;
+      margin: 10px 0;
+      padding-left: 18px;
+    }
+    .usp li::before {
+      content: "•";
+      color: var(--gold);
+      position: absolute;
+      left: 0;
+    }
+
+    /* Footer accent */
+    .footer {
+      margin-top: 28px;
+      text-align: center;
+      color: rgba(244, 244, 244, 0.8);
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 560px) {
+      .brand h1 { font-size: 1.65rem; }
+      .menu-header { font-size: 0.95rem; }
+      td { padding: 10px 12px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="brand">
+      <h1>RSR GOLD DUST COFFEE</h1>
+      <div class="tagline">Sip. Shine. Stay Well.</div>
+    </header>
+
+    <section class="section">
+      <h2>Brand concept</h2>
+      <div class="concept">
+        <p>RSR GOLD DUST COFFEE blends luxury and wellness in every cup. Our copper and gold aesthetic reflects purity, energy, and sophistication. We bring a holistic experience where premium coffee meets health, fitness, and spa-inspired nutrition.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Signature coffees</h2>
+      <div class="menu-block">
+        <div class="menu-header">Coffee & Shots</div>
+        <table aria-label="Signature Coffees">
+          <tbody>
+            <tr>
+              <td class="item">Bulletproof Latte</td>
+              <td class="price">$6.50</td>
+            </tr>
+            <tr>
+              <td class="item">Plant Power Cold Brew</td>
+              <td class="price">$7.00</td>
+            </tr>
+            <tr>
+              <td class="item">Turmeric Latte</td>
+              <td class="price">$6.00</td>
+            </tr>
+            <tr>
+              <td class="item">Matcha Energy Shot</td>
+              <td class="price">$5.50</td>
+            </tr>
+            <tr>
+              <td class="item">Espresso Clean Shot</td>
+              <td class="price">$4.50</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <span class="subheading">Wellness smoothies</span>
+        <table aria-label="Wellness Smoothies">
+          <tbody>
+            <tr>
+              <td class="item">Green Glow</td>
+              <td class="price">$11.00</td>
+            </tr>
+            <tr>
+              <td class="item">Protein Power</td>
+              <td class="price">$12.00</td>
+            </tr>
+            <tr>
+              <td class="item">Berry Recovery</td>
+              <td class="price">$11.50</td>
+            </tr>
+            <tr>
+              <td class="item">Tropical Recharge</td>
+              <td class="price">$12.00</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <span class="subheading">Cold pressed juices</span>
+        <table aria-label="Cold Pressed Juices">
+          <tbody>
+            <tr>
+              <td class="item">Detox Green</td>
+              <td class="price">$10.00</td>
+            </tr>
+            <tr>
+              <td class="item">Immunity Boost</td>
+              <td class="price">$9.50</td>
+            </tr>
+            <tr>
+              <td class="item">Skin Refresher</td>
+              <td class="price">$9.00</td>
+            </tr>
+            <tr>
+              <td class="item">Electrolyte Flow</td>
+              <td class="price">$8.50</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <span class="subheading">Fitness meals</span>
+        <table aria-label="Fitness Meals">
+          <tbody>
+            <tr>
+              <td class="item">Acai Energy Bowl</td>
+              <td class="price">$13.50</td>
+            </tr>
+            <tr>
+              <td class="item">Oat Fuel Bowl</td>
+              <td class="price">$12.50</td>
+            </tr>
+            <tr>
+              <td class="item">Greek Yogurt Parfait</td>
+              <td class="price">$11.00</td>
+            </tr>
+            <tr>
+              <td class="item">Power Protein Salad</td>
+              <td class="price">$16.00</td>
+            </tr>
+            <tr>
+              <td class="item">Chicken Fit Wrap</td>
+              <td class="price">$15.00</td>
+            </tr>
+            <tr>
+              <td class="item">Vegan Buddha Bowl</td>
+              <td class="price">$15.50</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Spa teas & elixirs</h2>
+      <div class="menu-block">
+        <div class="menu-header">Teas & Elixirs</div>
+        <table aria-label="Spa Teas & Elixirs">
+          <tbody>
+            <tr>
+              <td class="item">Calm Mind Tea</td>
+              <td class="price">$6.00</td>
+            </tr>
+            <tr>
+              <td class="item">Digest & Detox Elixir</td>
+              <td class="price">$6.50</td>
+            </tr>
+            <tr>
+              <td class="item">Beauty Brew</td>
+              <td class="price">$7.00</td>
+            </tr>
+            <tr>
+              <td class="item">Sleep Soother</td>
+              <td class="price">$6.00</td>
+            </tr>
+            <tr>
+              <td class="item">Zen Chai</td>
+              <td class="price">$6.50</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <span class="subheading">Healthy desserts</span>
+        <table aria-label="Healthy Desserts">
+          <tbody>
+            <tr>
+              <td class="item">Vegan Brownie Bite</td>
+              <td class="price">$5.50</td>
+            </tr>
+            <tr>
+              <td class="item">Protein Cheesecake Cup</td>
+              <td class="price">$6.50</td>
+            </tr>
+            <tr>
+              <td class="item">Chia Pudding Cup</td>
+              <td class="price">$6.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Unique selling points</h2>
+      <div class="usp">
+        <ul>
+          <li>Premium coffee experience infused with health and fitness values.</li>
+          <li>Copper & gold luxury aesthetic to attract upscale customers.</li>
+          <li>Nutritionist-approved smoothies and meals.</li>
+          <li>Spa-inspired teas and natural elixirs for relaxation and recovery.</li>
+          <li>Sustainable packaging and organic ingredients.</li>
+          <li>Designed for modern, health-conscious professionals.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      © RSR GOLD DUST COFFEE
+    </footer>
+  </main>
+</body>
+</html>
