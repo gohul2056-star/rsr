@@ -50,7 +50,7 @@
         color: var(--gold);
         text-transform: uppercase;
         letter-spacing: 2px;
-        margin-right: 45%;
+        margin-left: -45%;
     }
 
     nav a {
@@ -136,11 +136,47 @@
         border-top: 1px solid #333;
     }
 
-    @media (max-width: 768px) {
+   
+
+    /* Simplified for Mobile */
+    @media (min-width:320px) and (max-width: 480px){
         .grid { grid-template-columns: 1fr; }
         .hero h1 { font-size: 2.2rem; }
-        nav { display: none; } /* Simplified for mobile */
+        nav a{font-size: 0.5rem;padding: 10px;margin-left: 10px;  }
+        header{flex-direction: column;}
+        header img{margin-bottom: 10px;width: 7%;}
+        .brand-name{font-size: 0.9rem;margin-left: 5%;margin-bottom: 5px;}
+        .hero{background-size: contain;background-repeat: no-repeat;height: 35vh;}
+        .btn{padding: 10px 30px;margin-top: 100%;}
+        .content-img{height: 30vh;}
+        .text-content h2{margin-bottom: 50px;}
+        hr{background:yellow;}
+        
     }
+
+    /* Simplified for small Tablet */
+    @media (min-width:481px) and (max-width: 768px) {
+        .grid { grid-template-columns: 1fr; }
+        .hero h1 { font-size: 2.2rem; }
+        nav { display: none; }
+        
+    }
+
+     /* Simplified for Tablet */
+    @media (min-width:769px) and (max-width: 1024px){
+
+    }
+
+    /* Simplified for Laptop */
+    @media (min-width:1025px) and (max-width: 1366px){
+        br,hr{display: none;}
+    }
+
+    /* Simplified for Large Screen */
+    @media (min-width:1367px){
+
+    }
+
 </style>
 </head>
 <body>
@@ -160,14 +196,16 @@
     <a href="Menu.html" class="btn">VIEW MENU</a>
 </section>
 
-<div class="container">
+<div class="container"><br><br><hr><br>
     <div class="grid" id="about">
         <div class="text-content">
+            
             <h2>Our Story</h2>
             <p>At RSR Gold Dust Coffee House, we believe coffee is more than just a drink; it's a ritual. Every bean is carefully selected and roasted to perfection, topped with our signature touch of gold. Our mission is to provide an atmosphere of luxury and comfort in every sip.</p>
         </div>
         <img src="new.jpeg" alt="Latte Art" class="content-img">
     </div>
+    <hr><br><br>
     <div class="grid">
         <img src="new1.jpg" alt="Our Barista" class="content-img">
         <div class="text-content">
@@ -175,7 +213,7 @@
             <p>Experience coffee redefined for the true connoisseur.Small-batch, slow-roasted beans unlock deep and complex flavors.Every cup is finished with our signature "Gold Dust" touch.From bold espressos to elegant art, we craft magic in every sip.</p>
             <a href="#" style="color: var(--gold); text-decoration: none; font-weight: bold;">READ MORE →</a>
         </div>
-    </div>
+    </div><hr><br><br>
      <div class="grid" id="about">
         <div class="text-content">
             <h2>Latest News</h2>
@@ -184,7 +222,7 @@
         </div>
         <img src="new2.jpg" alt="Latte Art" class="content-img">
          
-   </div>
+   </div><hr><br><br>
 
 <footer id="contact">
     <p>&copy; 2025 RSR Gold Dust Coffee House. All rights reserved.</p>
